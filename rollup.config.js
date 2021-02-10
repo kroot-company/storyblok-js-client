@@ -30,7 +30,7 @@ const banner = `/*!
  */`
 
 const makeFileName = (format, file = 'index') => {
-  return getDistFolder(`${file}.${format}.js`)
+  return getDistFolder(`${file}.${format}.${format === 'es' ? 'mjs' : 'js'}`)
 }
 
 const factoryOutputObject = format => {
