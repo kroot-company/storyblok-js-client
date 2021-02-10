@@ -1,6 +1,7 @@
 'use strict'
 
-import { stringify } from 'qs'
+import * as qs from 'qs'
+const { stringify } = qs;
 import axios from  'axios'
 
 import throttledQueue from './throttlePromise'
